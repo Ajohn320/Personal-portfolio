@@ -2,18 +2,95 @@
 <html>
 <head>
   <title>My Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f5e6ff, #e6f0ff);
+    }
+
+    header {
+      background-color: #6a0dad;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .about {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #6a0dad;
+      font-weight: bold;
+    }
+  </style>
+
 </head>
 
 <body>
 
-  <h1>My Portfolio</h1>
-  <p>This portfolio showcases my work from Projects 1, 2, and 3.</p>
+  <header>
+    <h1>Aniyah Johnson</h1>
+    <p>Creative Portfolio</p>
+  </header>
 
-  <ul>
-    <li><a href="project1.html">Project 1 – Website</a></li>
-    <li><a href="project2.html">Project 2 – Video</a></li>
-    <li><a href="project3.html">Project 3 – Twine Game</a></li>
-  </ul>
+  <div class="about">
+    <p>
+      Welcome to my portfolio! This site showcases my creative work including
+      web design, video editing, and interactive storytelling projects.
+    </p>
+  </div>
+
+  <div class="projects">
+
+    <div class="card">
+      <a href="project1.html">
+        🌐 Project 1<br>
+        Website
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="project2.html">
+        🎥 Project 2<br>
+        Video
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="project3.html">
+        🎮 Project 3<br>
+        Twine Game
+      </a>
+    </div>
+
+  </div>
 
 </body>
 </html>
